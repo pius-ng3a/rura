@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b976610-93d8-4717-a051-3e8ad6f5d808" name="Default Changelist" comment="" />
+    <list default="true" id="6b976610-93d8-4717-a051-3e8ad6f5d808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuraVisualization/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RuraVisualization/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rura/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rura/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rura/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/rura/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rura/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rura/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rura/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rura/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,22 +22,33 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YNLcddNJt3bMJWAmlFnmYux3xY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\djangoRura\templates" />
+      <recent name="C:\Users\USER\Desktop\djangoRura" />
       <recent name="C:\Users\USER\Desktop\djangoRura\rura" />
     </key>
   </component>
@@ -34,6 +56,10 @@
     <configuration />
   </component>
   <component name="WindowStateProjectService">
+    <state x="442" y="174" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582873071317">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="442" y="174" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1582873071317" />
     <state x="462" y="142" key="FileChooserDialogImpl" timestamp="1582787933332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
