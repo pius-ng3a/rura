@@ -2,8 +2,27 @@
 
 
 {% block content %}
-<div>
-    <p> Inserting new panels here would work</p>
+
+<div style="width:100%;text-align:center;">
+    <div style="float:left;width:80%;">
+        <p> Data and graphs here</p>
+        {% if args %}
+            icts = args.ict
+            {% for ic in icts %}
+
+            {% endfor %}
+        {% endif %}
+
+    </div>
+    <div style="float:right;width:20%;">
+        <h4>Filter search</h4>
+        <form method="post" action="">
+            {% csrf_token %}
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
 </div>
 
 {% endblock%}
