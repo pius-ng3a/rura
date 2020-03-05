@@ -5,10 +5,14 @@ from rura.models import ICT,InternationalInternetBandwidth,VoiceTraffic
 # Create your views here.
 class HomePageView(TemplateView):
     template_name = "home.html"
-    def getICTMonthlyReport(self,request):
+    def getICTReport(self,request):
+    #def get(self):
         ict = ICT.objects.all()
         args ={'ict':ict}
-        return render(request,self.template_name,args)
+        return render(self.template_name,args)
 
 def homePageView(request):
-    return HttpResponse("With data")
+    template_name = "home.html"
+    icts = ICT.objects.all()
+    args ={'icts':icts}
+    return render(request, template_name,args)

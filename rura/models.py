@@ -4,6 +4,7 @@ from django.db import models
 class ICT(models.Model):
     company_name = models.CharField(max_length=30)
     date_paid = models.DateTimeField(auto_now=False) #necessary to have this cuz recording could be made at a later date than actual payment month
+    amount = models.CharField(max_length=20,default=62972)
     postpaid = models.CharField(max_length=30)
     prepaid = models.CharField(max_length=30)
     created_on = models.DateTimeField(auto_now=True)

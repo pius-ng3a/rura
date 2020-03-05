@@ -3,24 +3,43 @@
 
 {% block content %}
 
-<div style="width:100%;text-align:center;">
-    <div style="float:left;width:80%;">
-        <p> Data and graphs here</p>
-        {% if args %}
-            icts = args.ict
-            {% for ic in icts %}
+<div style="width:100%;text-align:center;clear:both">
+    <div style="float:left;width:70%;">
+         <h2>ICT statistics</h2><br/><br/>
+         <table border="1">
+            <thead>
+                <tr>
+                    <td>Name of Operator</td><td>Prepaid</td><td>Postpaid</td><td>Date Paid</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for ict in icts %}
+            <tr> <td>{{ict.company_name}}</td><td>{{ict.prepaid}}</td><td>{{ict.postpaid}}</td><td>{{ict.date_paid}}</td>
+            </tr>
 
-            {% endfor %}
-        {% endif %}
+        {% endfor %}
+            </tbody>
+        </table>
 
     </div>
-    <div style="float:right;width:20%;">
+    <div id="piechart" style="width: 250px; height:400px;float:left;"></div>
+    <div style="float:right;width:10%;">
         <h4>Filter search</h4>
-        <form method="post" action="">
+        <form method="post" action="the/ih">
             {% csrf_token %}
-
+            <select name="category" type="text">
+                <option value="select">Select Category</option>
+                <option value="ICT">ICT</option>
+                <option value="Energy">Energy</option>
+                <option value="others">others</option>
+            </select><br/><br/>
+            <select name="report_type" type="text">
+                <option value="monthly">Monthly Report</option>
+                <option value="quarterly">Quarterly Report</option>
+                </select><br/><br/>
+           <p>start Date: <input type="text" id="datepicker" name="start_date"></p>
+            <p>End Date: <input type="text" id="datepicker1" name="end_date"></p>
             <button type="submit">Submit</button>
-
         </form>
     </div>
 </div>
