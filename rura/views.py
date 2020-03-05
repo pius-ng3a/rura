@@ -8,11 +8,13 @@ class HomePageView(TemplateView):
     def getICTReport(self,request):
     #def get(self):
         ict = ICT.objects.all()
-        args ={'ict':ict}
+        vt =VoiceTraffic.objects.all()
+        args ={'ict':ict,'vt':vt}
         return render(self.template_name,args)
 
 def homePageView(request):
     template_name = "home.html"
     icts = ICT.objects.all()
-    args ={'icts':icts}
+    vt =VoiceTraffic.objects.all()
+    args ={'icts':icts,'vts':vt}
     return render(request, template_name,args)

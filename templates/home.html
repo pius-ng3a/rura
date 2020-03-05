@@ -43,5 +43,32 @@
         </form>
     </div>
 </div>
+<br/><br/>
+<div>
+    <div style="float:left;width:70%;">
+         <h3>Voice Calls </h3>
+         <table border="1">
+            <thead>
+                <tr>
+                    <td>Destination</td><td>Name of Operator</td><td>Calls</td><td>Average minute per Call</td> <td>Type</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for vt in vts %}
+            <tr> <td>{{vt.destination}}</td><td>{{vt.company_name}}</td><td>{{vt.call_count}}</td><td>{{vt.average_minute_per_call}}</td>
+                {% if vt.out_going %}
+                <td>Out going</td>
+                {% else %}
+                <td> In coming</td>
+                {% endif %}
+            </tr>
+
+        {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    <div style="width: 250px; height:400px;float:left;"></div>
+</div>
 
 {% endblock%}
