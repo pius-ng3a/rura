@@ -2,25 +2,27 @@
 
 
 {% block content %}
-
-<div style="width:100%;text-align:center;clear:both">
-    <div style="float:left;width:70%;">
-         <h2>ICT statistics</h2><br/><br/>
-         <table border="1">
-            <thead>
-                <tr>
-                    <td>Name of Operator</td><td>Prepaid</td><td>Postpaid</td><td>Date Paid</td>
+ 
+            <!-- <div class="col-md-6"></div> -->
+<div class="container" style="width:100%;text-align:center;clear:both">
+    <div class="row" style="float:left;width:70%;">
+        <div class="col-md-12">
+            <h2>ICT statistics</h2><br/><br/>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Name of Operator</td><td>Prepaid</td><td>Postpaid</td><td>Date Paid</td>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for ict in icts %}
+                <tr> <td>{{ict.company_name}}</td><td>{{ict.prepaid}}</td><td>{{ict.postpaid}}</td><td>{{ict.date_paid}}</td>
                 </tr>
-            </thead>
-            <tbody>
-            {% for ict in icts %}
-            <tr> <td>{{ict.company_name}}</td><td>{{ict.prepaid}}</td><td>{{ict.postpaid}}</td><td>{{ict.date_paid}}</td>
-            </tr>
 
-        {% endfor %}
-            </tbody>
-        </table>
-
+            {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
     <div id="piechart" style="width: 250px; height:400px;float:left;"></div>
     <div style="float:right;width:10%;">
@@ -68,7 +70,13 @@
         </table>
 
     </div>
-    <div style="width: 250px; height:400px;float:left;"></div>
+    <div style="width: 250px; height:400px;float:left;">
+    <canvas id="myPie" style="width:400; height:129;margin-top: 20px;"></canvas>
+    </div>
+    
+</div>  
+<div class="row col-md-12"  >
+    <canvas id="myChart" style="width:10; height:10px;"></canvas>
 </div>
-
+ 
 {% endblock%}
